@@ -1,16 +1,11 @@
-test = ["douze","zero","un","vingt"];
-
-rgj = affichee(test);
-
-
-function final = affichee(nb_convert)
+function final = affiche(nb_convert)
 
     ponder = [" million "," mille "," euro "," centime "];
     ponder_plur = [" millions "," mille "," euros "," centimes "];
 
     final ="";
 
- % On avait fait une boucle for au début mais trop d'exeption pour garder
+ % On avait fait une boucle for au dÃ©but mais trop d'exeption pour garder
  % un code simple et lisible.
  
  % % % % % % % %     TEST MILLIONS     % % % % % % % %
@@ -67,3 +62,4 @@ function final = affichee(nb_convert)
     end
  
 end
+

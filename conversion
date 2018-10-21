@@ -1,0 +1,60 @@
+unite = [" un "," deux "," trois "," quatre "," cinq "," six "," sept "," huit "," neuf "];
+dix= [" onze "," douze "," treize "," quatorze "," quinze "," seize "];
+dizaine = ["", vingt "," trente "," quarante "," cinquante "," soixante "," soixante-dix "," quatre-vingt "," quatre-vingt-dix "];
+
+
+res="";
+  for i= 1:4
+  c="";
+  d="";
+  u="";
+  
+    if (d==1) && (u==1)
+      d1=dix(d);
+      disp('strcat(res,d1);
+    end
+    
+    if (d==1) && (u==1)
+        d1=dix(d);
+        disp('strcat(res,d1);
+    end
+    
+    if (d==1) && (u==2)
+      d1=dix(d);
+      disp('strcat(res,d1);
+    end
+    
+    if (d==1) && (u==3)
+      d1=dix(d);
+      disp('strcat(res,d1);
+    end
+    
+    if (d==1) && (u==4)
+      d1=dix(d);
+      disp('strcat(res,d1);
+    end
+    
+    if (d==1) && (u==5)
+      d1=dix(d);
+      disp('strcat(res,d1);
+    end
+    
+    if (d==1) && (u==6)
+      d1=dix(d);
+      disp('strcat(res,d1);
+    end
+    
+    c=decortique_centaine(nbdecoupe(i));
+    d=decortique_dizaine(nbdecoupe(i));
+    u=decortique_unite(nbdecoupe(i));
+    c1=unite(c);
+    d1=dizaine(d);
+    u1=unite(u);
+    res = strcat(res,c1);
+     if c1!=0;
+      res = strcat(res, "cents");
+    end
+    res = strcat(res,d1);
+    res = strcat(res,u1);
+    end
+end
