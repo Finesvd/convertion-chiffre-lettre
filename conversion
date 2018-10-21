@@ -4,8 +4,6 @@ dizaine = ["", vingt "," trente "," quarante "," cinquante "," soixante "," soix
 
 
 res="";
-
-
 for i= 1:4
 c="";
 d="";
@@ -16,7 +14,11 @@ u=decortique_unite(nbdecoupe(i));
 c1=unite(c);
 d1=dizaine(d);
 u1=unite(u);
+
 res = strcat(res,c1);
+  if c1!=0;
+  res = strcat(res, "cents");
+  end
 res = strcat(res,d1);
 res = strcat(res,u1);
 
