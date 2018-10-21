@@ -1,6 +1,6 @@
 unite = [" un "," deux "," trois "," quatre "," cinq "," six "," sept "," huit "," neuf "];
 dix= [" onze "," douze "," treize "," quatorze "," quinze "," seize "];
-dizaine = ["", vingt "," trente "," quarante "," cinquante "," soixante "," soixante-dix "," quatre-vingts "," quatre-vingt-dix "];
+dizaine = ["", vingt "," trente "," quarante "," cinquante "," soixante "," soixante-dix "," quatre-vingt "," quatre-vingt-dix "];
 
 
 res="";
