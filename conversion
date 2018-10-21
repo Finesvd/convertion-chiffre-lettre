@@ -8,59 +8,10 @@ res="";
   c="";
   d="";
   u="";
-switch n
-    case 11
+    if (d==1) && (u==1)
     d1=dix(d);
     disp('strcat(res,d1);
-    
-    case 12
-    d1=dix(d);
-    disp('strcat(res,d1);
-    
-    case 13
-    d1=dix(d);
-    disp('strcat(res,d1);
-    
-    case 14
-    d1=dix(d);
-    disp('strcat(res,d1);
-    
-    case 15
-    d1=dix(d);
-    disp('strcat(res,d1);
-    
-    case 16
-    d1=dix(d);
-    disp('strcat(res,d1);
-    
-    case 71
-        disp('negative one');
-    case 72
-        disp('zero');
-    case 73
-        disp('negative one');
-    case 74
-        disp('zero');
-    case 75
-        disp('positive one');
-    case 76
-        disp('zero');
-    case 80
-        disp('negative one');
-    case 91
-        disp('zero');
-    case 92
-        disp('positive one');
-    case 93
-        disp('positive one');
-    case 94
-        disp('zero');
-    case 95
-        disp('negative one');
-    case 96
-        disp('zero');
-        
-    otherwise   
+    end
       c=decortique_centaine(nbdecoupe(i));
       d=decortique_dizaine(nbdecoupe(i));
       u=decortique_unite(nbdecoupe(i));
