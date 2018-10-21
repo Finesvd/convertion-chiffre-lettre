@@ -1,49 +1,66 @@
-nombre = lecture();
+function tab_chaine = convertir(nbdecoupe)
 
-% unite = [" un "," deux "," trois "," quatre "," cinq "," six "," sept "," huit "," neuf "];
-% dix= [" onze "," douze "," treize "," quatorze "," quinze "," seize "];
-% dizaine = [" vingt "," trente "," quarante "," cinquante "," soixante "," soixante-dix "," quatre-vingts "," quatre-vingt-dix "];
+    unite = [" un "," deux "," trois "," quatre "," cinq "," six "," sept "," huit "," neuf "];
+    dizaine = [""," vingt "," trente "," quarante "," cinquante "," soixante "," soixante-dix "," quatre-vingt "," quatre-vingt-dix "];
+    res="";
+    dix= [" onze "," douze "," treize "," quatorze "," quinze "," seize "];
+    tab_chaine =["","","",""];
+    for i= 1:3
+      c="";
+      d="";
+      u="";
+      c=extraire_centaine(nbdecoupe(i));
+        d=extraire_dizaine(nbdecoupe(i));
+        u=extraire_unite(nbdecoupe(i));
+        c1=unite(c);
+        d1=dizaine(d);
+        u1=unite(u);
+    
+  
+        if (d==1) && (u==1)
+          d1=dix(d);
+          
+          tab_chaine(i) = strcat(tab_chaine(i),d1);
+        end
 
-%test = conversion(nombre_decoupe);
+        if (d==1) && (u==1)
+            d1=dix(d);
+            res = strcat(res,d1);
+        end
+
+        if (d==1) && (u==2)
+          d1=dix(d);
+          res = strcat(res,d1);
+        end
+
+        if (d==1) && (u==3)
+          d1=dix(d);
+          res = strcat(res,d1);
+        end
+
+        if (d==1) && (u==4)
+          d1=dix(d);
+          res = strcat(res,d1);
+        end
+
+        if (d==1) && (u==5)
+          d1=dix(d);
+          res = strcat(res,d1);
+        end
+
+        if (d==1) && (u==6)
+          d1=dix(d);
+          res = strcat(res,d1);
+        end
 
 
-% function chaine = conversion(nbr)
-%     i=4;
-%     j=3;
-%     chaine ="";
-% %     Boucle pour gerer une case 
-%      for c = 1:i 
-% %          boucle pour gerer les 3 unit�s
-%         for b = 1:j
-%             if n
-%                 nbr(nb)>0 
-%                       
-%             else
-%               chaine = strcat(chaine,unite(nb));
-%             end
-%    
-%         end
-%        
-%      end
-%  end
-
-function titi= decortique_centaine(nbdecoupe)
-
-titi = nbdecoupe / 100;
-
-
+        res = strcat(res,c1);
+        if c~=0
+          res = strcat(res, "cents");
+        end
+        
+        res = strcat(res,d1);
+        res = strcat(res,u1);
+        
+    end
 end
-
-function toto= decortique_dizaine(nbdecoupe)
-
-toto = nbdecoupe -((decortique_centaine(nbdecoupe)*100) /10);
-
-end
-
-function tutu =  decortique_unite(nbdecoupe)  
-tutu =  nbdecoupe -(decortique_centaine(nbdecoupe)*100) ) -((decortique_dizaine(nbdecoupe)*10) );
-
-end 
-
-
-
