@@ -1,0 +1,13 @@
+for i= 1:4
+res = "";
+c="";
+d="";
+u="";
+c=decortique_centaine(nbdecoupe(i));
+d=decortique_dizaine(nbdecoupe(i));
+u=decortique_unite(nbdecoupe(i));
+res = strca(res,c);
+res = strcat(res,d);
+res = strcat(res,u);
+
+
