@@ -5,6 +5,7 @@ function tab_chaine = convertir(nbdecoupe)
     res="";
     dix= [" onze "," douze "," treize "," quatorze "," quinze "," seize "];
     tab_chaine =["","","",""];
+    
     for i= 1:3
       c="";
       d="";
@@ -25,42 +26,43 @@ function tab_chaine = convertir(nbdecoupe)
 
         if (d==1) && (u==1)
             d1=dix(d);
-            res = strcat(res,d1);
+            tab_chaine(i) = strcat(tab_chaine(i),d1);
         end
 
         if (d==1) && (u==2)
           d1=dix(d);
-          res = strcat(res,d1);
+          tab_chaine(i) = strcat(tab_chaine(i),d1);
         end
 
         if (d==1) && (u==3)
           d1=dix(d);
-          res = strcat(res,d1);
+          tab_chaine(i) = strcat(tab_chaine(i),d1);
         end
 
         if (d==1) && (u==4)
           d1=dix(d);
-          res = strcat(res,d1);
+          tab_chaine(i) = strcat(tab_chaine(i),d1);
         end
 
         if (d==1) && (u==5)
           d1=dix(d);
-          res = strcat(res,d1);
+          tab_chaine(i) = strcat(tab_chaine(i),d1);
         end
 
         if (d==1) && (u==6)
           d1=dix(d);
-          res = strcat(res,d1);
+          tab_chaine(i) = strcat(tab_chaine(i),d1);
         end
 
 
-        res = strcat(res,c1);
+        tab_chaine(i) = strcat(tab_chaine(i),c1);
         if c~=0
           res = strcat(res, "cents");
         end
         
-        res = strcat(res,d1);
-        res = strcat(res,u1);
+        tab_chaine(i) = strcat(tab_chaine(i),d1);
+        tab_chaine(i) = strcat(tab_chaine(i),u1);
         
     end
+
 end
